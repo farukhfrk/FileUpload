@@ -32,7 +32,9 @@ public class FileController
 		}
 		InputStream inputStream = file.getInputStream();
 		String originalName = file.getOriginalFilename();
+		System.out.println("originalname :"+ originalName);
 		String name = file.getName();
+		System.out.println("filename : "+name);
 		String contentType = file.getContentType();
 		long size = file.getSize();
 		logger.info("inputStream: " + inputStream);
